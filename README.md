@@ -9,7 +9,7 @@ Pages
 1. Import `bincom_test.sql` into MySQL.
 2. `pip install -r requirements.txt`
 3. Set `DB_HOST`, `DB_USER`, `DB_PASS`, `DB_NAME` (defaults: localhost, root, empty, bincom_test)
-4. `python app.py` and open http://localhost:5000
+4. `python app.py` and open http://localhost:5001
 
 ## Notes
 - Joins use `polling_unit.uniqueid = announced_pu_results.polling_unit_uniqueid`.

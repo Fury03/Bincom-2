@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 """Bincom test - Flask + MySQL.
 Run: pip install -r requirements.txt && python app.py
 Schema notes (from bincom_test.sql):
@@ -251,6 +253,6 @@ def new_pu():
       <button>Save results</button></form>"""
     return page("Add New Polling Unit Results", body)
 
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.getenv("PORT", "5001"))
+    app.run(debug=True, port=port)
